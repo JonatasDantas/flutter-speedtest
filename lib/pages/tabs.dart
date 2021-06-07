@@ -4,6 +4,7 @@ import 'package:flutter_speedtest_poc/components/platform_dialog.dart';
 import 'package:flutter_speedtest_poc/models/speedtest.dart';
 import 'package:flutter_speedtest_poc/pages/dashboard/dashboard.dart';
 import 'package:flutter_speedtest_poc/pages/dialogs/dialogs.dart';
+import 'package:flutter_speedtest_poc/pages/settings/settings.dart';
 
 class TabsPage extends StatefulWidget {
   @override
@@ -27,6 +28,13 @@ class _TabsPageState extends State<TabsPage> {
         label: "Modais",
       ),
       widget: DialogsView(),
+    ),
+    TabBarItem(
+      navigationItem: BottomNavigationBarItem(
+        icon: Icon(Icons.settings),
+        label: "Ajustes",
+      ),
+      widget: SettingsContainer(),
     ),
   ];
 
